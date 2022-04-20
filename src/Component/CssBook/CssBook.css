@@ -184,3 +184,27 @@ body {
     font-size: 12px;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .book_section {
+    height: 70vh;
+    align-items: center;
+  }
+  .book_section button {
+    margin-top: -250px;
+  }
+  .book {
+    width: 185px;
+    height: 285px;
+  }
+  .book:after {
+    width: 116%;
+  }
+  .page1 > p {
+    font-size: 6px;
+  }
+  .page1 > h1 {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+}
