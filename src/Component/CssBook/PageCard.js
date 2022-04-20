@@ -5,11 +5,11 @@ const PageCard = ({ show, show1, show2, isPage1, isPage2, isPage3, text }) => {
     <div
       className={`page1 ${isPage1 && show && "page_shado"} ${
         isPage1 && show1 && "page_rotter"
-      }  ${isPage2 && show2 && "page_rotter"} ${
-        isPage2 && show2 && "zIndex_6"
-      } ${isPage2 && show1 && "page_shado"} ${
-        isPage3 && show2 && "page_shado"
-      } ${isPage2 && "zIndex_4"} ${isPage3 && "zIndex_3"}`}
+      }  ${isPage2 && show2 && "page_rotter zIndex_6"} ${
+        isPage2 && show1 && "page_shado"
+      } ${isPage3 && show2 && "page_shado"} ${isPage2 && "zIndex_4"} ${
+        isPage3 && "zIndex_3"
+      }`}
     >
       <h1>{text}</h1>
       <p>

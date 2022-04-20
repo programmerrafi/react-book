@@ -9,12 +9,8 @@ const CssBook = () => {
   const [show2, setShow2] = useState(false);
 
   const handleNext = () => {
-    if (show1 === true) {
-      setShow2(true);
-    }
-    if (show === true) {
-      setShow1(true);
-    }
+    show1 === true && setShow2(true);
+    show === true && setShow1(true);
     setShow(true);
   };
   const handlePrev = () => {
@@ -29,6 +25,7 @@ const CssBook = () => {
       setShow(false);
     }
   };
+
   return (
     <section className="book_section">
       <Button variant="contained" className="prev" onClick={handlePrev}>
